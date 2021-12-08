@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Display Output</title>
+</head>
+<body>
+<div id="second"></div>
+<button type="button" onclick="hello();">Click me first</button>
+<button type="button" onclick="showMessage()">Click me second</button>
+<button type="button" onclick="printMess()">Click me third</button>
+<button type="button" onclick="consoleMess()">Click me fourth</button>
+<script !src="">
+    function hello() {
+        alert("Xin mtfkin' Chao`");
+    }
+
+    function showMessage() {
+        document.getElementById('second').innerHTML = "Hello is me again~";
+    }
+
+    function printMess() {
+        document.write("Hey buddy");
+
+    }
+
+    function consoleMess() {
+        console.log("goodbye");
+    }
+</script>
+</body>
+</html>
