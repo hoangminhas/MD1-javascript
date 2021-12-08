@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 id="minhthemeow"></h1>
+<p>Choose something you really want</p>
+<select name="selection" id="selection">
+    <option value="" disabled selected>Be careful!</option>
+    <option value="knowledge">Mighty Knowledge</option>
+    <option value="physical-health">Incredibly Muscular</option>
+    <option value="luck">Mr. Fortune</option>
+</select>
+</body>
+</html>
+<script !src="">
+    // byting javascript hien thi len html
+  let greeting = "Hola my fellas";
+  document.getElementById('minhthemeow').innerHTML = greeting;
+
+  //catch event onchange tren html:
+    //cach 1: Setting catch event inside an html tag
+    function warning() {
+        let selectedVal = document.getElementById('selection').value;
+        alert(selectedVal);
+        confirm('Are you really sure about this?');
+    }
+
+    //cach 2: Catch event by using addEventListener()
+    let selectedElement = document.getElementById('selection');
+    selectedElement.addEventListener("change", warning2)
+    function warning2() {
+        let selectedVal = document.getElementById('selection').value;
+        alert(selectedVal);
+        confirm("Anh Long OK??");
+    }
+</script>
